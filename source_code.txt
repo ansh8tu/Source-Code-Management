@@ -8,4 +8,25 @@ using namespace std;
 int main()
 {
 	cout<<"Hello World!!";
-}	
+}
+
+Adding up the code for adding two numbers in CPP
+.
+.
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int Number1,Number2,Sum;
+	cout<<"Enter any two numbers that you wish to add";
+	cin>>Number1>>Number2;
+
+	Sum=Number1+Number2;
+	cout<<"The sum of the two numbers is"<<Sum;
+
+	return 0;
+}
+
+	
