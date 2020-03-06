@@ -3,23 +3,23 @@ using namespace std;
 
 int main()
 {
-  int origNum, num, rem, sum = 0;
-  cout << "Enter a positive  integer: ";
-  cin >> origNum;
+  int Original_Number, Entered_number, Remainder, Sum = 0;
+  cout << "Enter any Positive integer: ";
+  cin >> Original_Number;
 
-  num = origNum;
+  Entered_number = Original_Number;
 
-  while(num != 0)
+  while(Entered_number != 0)
   {
-      rem = num % 10;
-      sum += rem * rem * rem;
-      num /= 10;
+      Remainder = Entered_number % 10;
+      Sum += Remainder * Remainder * Remainder;
+      Entered_number /= 10;
   }
 
-  if(sum == origNum)
-    cout << origNum << " is an Armstrong number.";
+  if(Sum == Original_Number)
+    cout << Original_Number << " is an Armstrong number!!";
   else
-    cout << origNum << " is not an Armstrong number.";
+    cout << Original_Number << " is not an Armstrong number!!";
 
   return 0;
 }
