@@ -1,18 +1,17 @@
+===========================================================================================================================================
+//This is a program for Addition of Two Numbers
+===========================================================================================================================================
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int firstNumber, secondNumber, sumOfTwoNumbers;
+    int First_number, Second_number, Sum_of_two_numbers;
     
     cout << "Enter two integers: ";
-    cin >> firstNumber >> secondNumber;
+    cin >>First_number>>Second_number ;
+    Sum_of_two_numbers = First_number + Second_number;
 
-    // sum of two numbers in stored in variable sumOfTwoNumbers
-    sumOfTwoNumbers = firstNumber + secondNumber;
-
-    // Prints sum 
-    cout << firstNumber << " + " <<  secondNumber << " = " << sumOfTwoNumbers;     
-
+    cout << First_number << " + " <<  Second_number << " = " << Sum_of_two_numbers;     
     return 0;
 }
