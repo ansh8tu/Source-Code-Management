@@ -1,37 +1,41 @@
+========================================================================================================================================
+ //This is a program for Calculator
+========================================================================================================================================
+
+
 # include <iostream>
 using namespace std;
 
 int main()
 {
-    char op;
-    float num1, num2;
+    char operator_type;
+    float operand_1, operand_2;
 
-    cout << "Enter operator either + or - or * or /: ";
-    cin >> op;
+    cout << "Enter Operator of type + or - or * or /: ";
+    cin >> operator_type;
 
-    cout << "Enter two operands: ";
-    cin >> num1 >> num2;
+    cout << "Enter the two operands on which you want to perform the operation: ";
+    cin >> operand_1 >> operand_2;
 
-    switch(op)
+    switch(operator_type)
     {
         case '+':
-            cout << num1+num2;
+            cout << operand_1+operand_2;
             break;
 
         case '-':
-            cout << num1-num2;
+            cout << operand_1-operand_2;
             break;
 
         case '*':
-            cout << num1*num2;
+            cout << operand_1*operand_2;
             break;
 
         case '/':
-            cout << num1/num2;
+            cout << operand_1/operand_2;
             break;
 
         default:
-            // If the operator is other than +, -, * or /, error message is shown
             cout << "Error! operator is not correct";
             break;
     }
