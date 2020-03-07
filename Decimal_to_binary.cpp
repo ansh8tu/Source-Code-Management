@@ -1,31 +1,34 @@
+========================================================================================================================================
+//This is a code for conversion of a decimal number into binary
+========================================================================================================================================
 #include <iostream>
 #include <cmath>
 using namespace std;
 
-long long convertDecimalToBinary(int);
+long long Decimal_to_Binary(int);
 
 int main()
 {
-    int n, binaryNumber;
+    int Decimal_Number, Binary_Number;
 
     cout << "Enter a decimal number: ";
-    cin >> n;
-    binaryNumber = convertDecimalToBinary(n);
-    cout << n << " in decimal = " << binaryNumber << " in binary" << endl ;
+    cin >> Decimal_Number;
+    Binary_Number = Decimal_to_Binary(n);
+    cout << n << " in decimal = " << Binary_Number << " in binary" << endl ;
     return 0;
 }
 
-long long convertDecimalToBinary(int n)
+long long DecimalToBinary(int n)
 {
-    long long binaryNumber = 0;
-    int remainder, i = 1, step = 1;
+    long long Binary_Number = 0;
+    int Remainder, i = 1, step = 1;
 
     while (n!=0)
     {
-        remainder = n%2;
-        cout << "Step " << step++ << ": " << n << "/2, Remainder = " << remainder << ", Quotient = " << n/2 << endl;
+        Remainder = n%2;
+        cout << "Step " << step++ << ": " << n << "/2, Remainder = " << Remainder << ", Quotient = " << n/2 << endl;
         n /= 2;
-        binaryNumber += remainder*i;
+        Binary_Number += Remainder*i;
         i *= 10;
     }
     return binaryNumber;
