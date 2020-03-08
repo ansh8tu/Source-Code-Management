@@ -1,25 +1,28 @@
+========================================================================================================================================
+//This is a program for Calculating LCM of two numbers	
+========================================================================================================================================
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n1, n2, max;
+    int Number_1, Number_2, Maximum;
 
     cout << "Enter two numbers: ";
-    cin >> n1 >> n2;
+    cin >> Number_1 >> Number_2;
     
     // maximum value between n1 and n2 is stored in max
-    max = (n1 > n2) ? n1 : n2;
+    Maximum = (Number_1 > Number_2) ? Number_1 : Number_2;
 
     do
     {
-        if (max % n1 == 0 && max % n2 == 0)
+        if (Maximum % Number_1 == 0 && Maximum % Number_2 == 0)
         {
-            cout << "LCM = " << max;
+            cout << "LCM = " << Maximum;
             break;
         }
         else
-            ++max;
+            ++Maximum;
     } while (true);
     
     return 0;
