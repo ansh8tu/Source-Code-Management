@@ -1,19 +1,23 @@
+===========================================================================================================================================
+ //This is a program for calculating Factorial of a Number!!
+===========================================================================================================================================
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    unsigned int n;
-    unsigned long long factorial = 1;
+    unsigned int Number;
+    unsigned long long Factorial_of_number = 1;
 
     cout << "Enter a positive integer: ";
-    cin >> n;
+    cin >> Number;
 
-    for(int i = 1; i <=n; ++i)
+    for(int i = 1; i <=Number; ++i)
     {
-        factorial *= i;
+        Factorial_of_number *= i;
     }
 
-    cout << "Factorial of " << n << " = " << factorial;    
+    cout << "Factorial of " << Number << " = " << Factorial_of_number;    
     return 0;
 }
