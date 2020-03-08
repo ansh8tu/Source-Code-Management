@@ -1,21 +1,24 @@
+===========================================================================================================================================
+//This is a program for calculating HCF of Two Numbers	
+===========================================================================================================================================
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n1, n2;
+    int Number_1, Number_2;
 
     cout << "Enter two numbers: ";
-    cin >> n1 >> n2;
+    cin >> Number_1 >> Number_2;
     
-    while(n1 != n2)
+    while(Number_1 != Number_2)
     {
-        if(n1 > n2)
-            n1 -= n2;
+        if(Number_1 > Number_2)
+            Number_1 -= Number_2;
         else
-            n2 -= n1;
+            Number_2 -= Number_1;
     }
 
-    cout << "HCF = " << n1;
+    cout << "HCF = " << Number_1;
     return 0;
 }
