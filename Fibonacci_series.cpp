@@ -1,33 +1,36 @@
+========================================================================================================================================
+ //This is a program for Fibonacci Series  
+========================================================================================================================================
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n, t1 = 0, t2 = 1, nextTerm = 0;
+    int Number_of_terms, Term_1 = 0, Term_2 = 1, Next_term = 0;
 
     cout << "Enter the number of terms: ";
-    cin >> n;
+    cin >> Number_of_terms;
 
-    cout << "Fibonacci Series: ";
+    cout << "The Fibonacci Series Goes as follows: ";
 
-    for (int i = 1; i <= n; ++i)
+    for (int i = 1; i <= Number_of_terms; ++i)
     {
         // Prints the first two terms.
         if(i == 1)
         {
-            cout << " " << t1;
+            cout << " " << Term_1;
             continue;
         }
         if(i == 2)
         {
-            cout << t2 << " ";
+            cout << Term_2 << " ";
             continue;
         }
-        nextTerm = t1 + t2;
-        t1 = t2;
-        t2 = nextTerm;
+        nextTerm = Term_1 + Term_2;
+        Term_1 = Term_2;
+        Term_2 = Next_term;
         
-        cout << nextTerm << " ";
+        cout << Next_term << " ";
     }
     return 0;
 }
