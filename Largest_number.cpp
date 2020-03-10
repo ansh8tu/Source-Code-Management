@@ -1,25 +1,28 @@
+========================================================================================================================================
+ //This is a program for calculating largest number amongst three numbers.
+========================================================================================================================================
 #include <iostream>
 using namespace std;
 
 int main()
 {    
-    float n1, n2, n3;
+    float Number_1, Number_2, Number_3;
 
     cout << "Enter three numbers: ";
-    cin >> n1 >> n2 >> n3;
+    cin >> Number_1 >> Number_2 >> Number_3;
 
-    if(n1 >= n2 && n1 >= n3)
+    if(Number_1 >= Number_2 && Number_1 >= Number_3)
     {
-        cout << "Largest number: " << n1;
+        cout << "Largest number: " << Number_1;
     }
 
-    if(n2 >= n1 && n2 >= n3)
+    if(Number_2 >= Number_1 && Number_2 >= Number_3)
     {
-        cout << "Largest number: " << n2;
+        cout << "Largest number: " << Number_2;
     }
 
-    if(n3 >= n1 && n3 >= n2) {
-        cout << "Largest number: " << n3;
+    if(Number_3 >= Number_1 && Number_3 >= Number_2) {
+        cout << "Largest number: " << Number_3;
     }
 
     return 0;
