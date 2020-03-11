@@ -1,3 +1,7 @@
+========================================================================================================================================
+//This is a program for operator overloading	
+========================================================================================================================================
+#include<iostream>
 using namespace std;
 
 class Check
@@ -15,14 +19,8 @@ class Check
 int main()
 {
     Check obj;
-
-    // Displays the value of data member i for object obj
     obj.Display();
-
-    // Invokes operator function void operator ++( )
     ++obj; 
-  
-    // Displays the value of data member i for object obj
     obj.Display();
 
     return 0;
