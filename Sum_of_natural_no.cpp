@@ -1,17 +1,20 @@
+===========================================================================================================================================
+//This is a program for calculating sum of natural number	
+===========================================================================================================================================
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n, sum = 0;
+    int Number, Sum = 0;
 
     cout << "Enter a positive integer: ";
-    cin >> n;
+    cin >> Number;
 
-    for (int i = 1; i <= n; ++i) {
-        sum += i;
+    for (int i = 1; i <= Number; ++i) {
+        Sum += i;
     }
 
-    cout << "Sum = " << sum;
+    cout << "Sum = " << Sum;
     return 0;
 }
