@@ -1,28 +1,32 @@
+========================================================================================================================================
+//This is a program to convert octal numbers into binary number   
+========================================================================================================================================
+#include<iostream>
 #include <cmath>
 using namespace std;
 
-int octalToDecimal(int octalNumber);
+int octalToDecimal(int Octal_number);
 
 int main()
 {
-   int octalNumber;
+   int Octal_number;
    cout << "Enter an octal number: ";
-   cin >> octalNumber;
-   cout << octalNumber << " in octal = " << octalToDecimal(octalNumber) << " in decimal";
+   cin >> Octal_number;
+   cout << Octal_number << " in octal = " << Octal_to_decimal(Octal_number) << " in decimal";
    
    return 0;
 }
 
 // Function to convert octal number to decimal
-int octalToDecimal(int octalNumber)
+int octalToDecimal(int Octal_number)
 {
-    int decimalNumber = 0, i = 0, rem;
-    while (octalNumber != 0)
+    int Decimal_number = 0, i = 0, Remainder;
+    while (Octal_number != 0)
     {
-        rem = octalNumber % 10;
-        octalNumber /= 10;
-        decimalNumber += rem * pow(8, i);
+        Remainder = Octal_number % 10;
+        Octal_number /= 10;
+        Decimal_number += Remainder * pow(8, i);
         ++i;
     }
-    return decimalNumber;
+    return Decimal_number;
 }
