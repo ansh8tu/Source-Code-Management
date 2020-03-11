@@ -1,21 +1,25 @@
+===========================================================================================================================================
+//This is a program for reversing a number 	
+===========================================================================================================================================
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n, reversedNumber = 0, remainder;
+    int Input_number, Reversed_number = 0, Remainder;
 
     cout << "Enter an integer: ";
-    cin >> n;
+    cin >> Input_number;
 
-    while(n != 0)
+    while(Input_number != 0)
     {
-        remainder = n%10;
-        reversedNumber = reversedNumber*10 + remainder;
-        n /= 10;
+        Remainder = Input_number%10;
+        Reversed_number = Reversed_number*10 + Remainder;
+        Input_number /= 10;
     }
 
-    cout << "Reversed Number = " << reversedNumber;
+    cout << "Reversed Number is = " << Reversed_number;
 
     return 0;
 }
