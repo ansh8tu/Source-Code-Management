@@ -3,23 +3,23 @@ using namespace std;
 
 int main()
 {
-    char c;
-    int isLowercaseVowel, isUppercaseVowel;
+    char Input_Alphabet;
+    int Is_a_lower_case_vowel,Is_a_upper_case_vowel;
 
     cout << "Enter an alphabet: ";
-    cin >> c;
+    cin >> Input_Alphabet;
 
     // evaluates to 1 (true) if c is a lowercase vowel
-    isLowercaseVowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+    Is_a_lower_case_vowel = (Input_Alphabet == 'a' || Input_Alphabet == 'e' || Input_Alphabet == 'i' || Input_Alphabet == 'o' || Input_Alphabet == 'u');
 
     // evaluates to 1 (true) if c is an uppercase vowel
-    isUppercaseVowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+    Is_a_upper_case_vowel = (Input_Alphabet == 'A' || Input_Alphabet == 'E' || Input_Alphabet == 'I' || Input_Alphabet == 'O' || Input_Alphabet == 'U');
 
     // evaluates to 1 (true) if either isLowercaseVowel or isUppercaseVowel is true
     if (isLowercaseVowel || isUppercaseVowel)
-        cout << c << " is a vowel.";
+        cout << Input_Alphabet << " is a vowel.";
     else
-        cout << c << " is a consonant.";
+        cout << Input_Alphabet << " is a consonant.";
 
     return 0;
 }
