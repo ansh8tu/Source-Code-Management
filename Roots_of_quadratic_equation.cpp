@@ -1,34 +1,37 @@
+========================================================================================================================================
+ //This is a program to calulate the roots of a quadratic equation   
+========================================================================================================================================
 #include <iostream>
 #include <cmath>
 using namespace std;
 
 int main() {
 
-    float a, b, c, x1, x2, discriminant, realPart, imaginaryPart;
-    cout << "Enter coefficients a, b and c: ";
-    cin >> a >> b >> c;
-    discriminant = b*b - 4*a*c;
+    float A, B, C, X1, X2, Discriminant, Real_part, Imaginary_part;
+    cout << "Enter coefficients A, B and C: ";
+    cin >> A >> B >> C;
+    discriminant = B*B - 4*A*C;
     
-    if (discriminant > 0) {
-        x1 = (-b + sqrt(discriminant)) / (2*a);
-        x2 = (-b - sqrt(discriminant)) / (2*a);
+    if (Discriminant > 0) {
+        X1 = (-B + sqrt(Discriminant)) / (2*A);
+        X2 = (-B - sqrt(Discriminant)) / (2*A);
         cout << "Roots are real and different." << endl;
-        cout << "x1 = " << x1 << endl;
-        cout << "x2 = " << x2 << endl;
+        cout << "X1 = " << X1 << endl;
+        cout << "X2 = " << X2 << endl;
     }
     
-    else if (discriminant == 0) {
+    else if (Discriminant == 0) {
         cout << "Roots are real and same." << endl;
-        x1 = (-b + sqrt(discriminant)) / (2*a);
-        cout << "x1 = x2 =" << x1 << endl;
+        X1 = (-B + sqrt(Discriminant)) / (2*A);
+        cout << "X1 = X2 =" << x1 << endl;
     }
 
     else {
-        realPart = -b/(2*a);
-        imaginaryPart =sqrt(-discriminant)/(2*a);
+        Real_part = -B/(2*A);
+        Imaginary_part =sqrt(-Discriminant)/(2*A);
         cout << "Roots are complex and different."  << endl;
-        cout << "x1 = " << realPart << "+" << imaginaryPart << "i" << endl;
-        cout << "x2 = " << realPart << "-" << imaginaryPart << "i" << endl;
+        cout << "X1 = " << Real_part << "+" << Imaginary_part << "i" << endl;
+        cout << "X2 = " << Real_part << "-" << Imaginary_part << "i" << endl;
     }
 
     return 0;
