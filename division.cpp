@@ -1,21 +1,25 @@
+===========================================================================================================================================
+//This is a program to calculate the quotient and remainder    
+===========================================================================================================================================
+
 #include <iostream>
 using namespace std;
 
 int main()
 {    
-    int divisor, dividend, quotient, remainder;
+    int Divisor, Dividend, Quotient, Remainder;
 
-    cout << "Enter dividend: ";
-    cin >> dividend;
+    cout << "Enter the value of dividend: ";
+    cin >> Dividend;
 
-    cout << "Enter divisor: ";
-    cin >> divisor;
+    cout << "Enter the value of divisor: ";
+    cin >> Divisor;
 
-    quotient = dividend / divisor;
-    remainder = dividend % divisor;
+    Quotient = Dividend / Divisor;
+    Remainder = Dividend % Divisor;
 
-    cout << "Quotient = " << quotient << endl;
-    cout << "Remainder = " << remainder;
+    cout << "Quotient of the above values is = " << Quotient << endl;
+    cout << "Remainder of the above values is = " << Remainder;
 
     return 0;
 }
