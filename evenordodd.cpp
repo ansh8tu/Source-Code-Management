@@ -1,17 +1,21 @@
+===========================================================================================================================================
+//This is a program for checking whether a number is even or odd     
+===========================================================================================================================================
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int n;
+    int Entered_number;
 
     cout << "Enter an integer: ";
-    cin >> n;
+    cin >> Entered_number;
 
-    if ( n % 2 == 0)
-        cout << n << " is even.";
+    if ( Entered_number % 2 == 0)
+        cout << Entered_number << " is an even number.";
     else
-        cout << n << " is odd.";
+        cout << Entered_number << " is an odd number.";
 
     return 0;
 }
