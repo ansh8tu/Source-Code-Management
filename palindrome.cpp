@@ -7,23 +7,23 @@ using namespace std;
 
 int main()
 {
-     int n, num, digit, rev = 0;
+     int Set_number, Entered_number, Reversed_digit, Reverse = 0;
 
      cout << "Enter a positive number: ";
-     cin >> num;
+     cin >> Entered_number;
 
-     n = num;
+     Set_number = Entered_number;
 
      do
      {
-         digit = num % 10;
-         rev = (rev * 10) + digit;
-         num = num / 10;
-     } while (num != 0);
+         Reversed_digit = Entered_number % 10;
+         Reverse = (Reverse * 10) + digit;
+         Entered_number = Entered_number / 10;
+     } while (Entered_number != 0);
 
-     cout << " The reverse of the number is: " << rev << endl;
+     cout << " The reverse of the number is: " << Reverse << endl;
 
-     if (n == rev)
+     if (Set_number == Reverse)
          cout << " The number is a palindrome.";
      else
          cout << " The number is not a palindrome.";
