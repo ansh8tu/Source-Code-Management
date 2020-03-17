@@ -1,14 +1,18 @@
+========================================================================================================================================
+//This is a program for printing half pyramid    
+========================================================================================================================================
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int rows;
+    int Entered_rows;
 
     cout << "Enter number of rows: ";
-    cin >> rows;
+    cin >> Entered_rows;
 
-    for(int i = 1; i <= rows; ++i)
+    for(int i = 1; i <= Entered_rows; ++i)
     {
         for(int j = 1; j <= i; ++j)
         {
