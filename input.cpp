@@ -1,13 +1,16 @@
+===========================================================================================================================================
+//This is a Program for taking input from user    
+===========================================================================================================================================
 #include <iostream>
 using namespace std;
 
 int main()
 {    
-    int number;
+    int Entered_number;
 
     cout << "Enter an integer: ";
-    cin >> number;
+    cin >> Entered_number;
 
-    cout << "You entered " << number;    
+    cout << "You entered " << Entered_number;    
     return 0;
 }
