@@ -4,19 +4,23 @@
 #include <iostream>
 using namespace std;
 
-int c = 12;
-void test();
+int Number = 12;
+void fun();
 
 int main()
 {
-    ++c;
-    cout << c <<endl;
-    test();
+    ++Number;
+    cout << Number <<endl;
+    fun();
     return 0;
 }
 
-void test()
+void fun()
 {
-    ++c;
-    cout << c;
+    ++Number;
+    cout << Number;
 }
+
+//Output of the above code is:
+//13
+//14
