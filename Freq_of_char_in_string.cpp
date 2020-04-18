@@ -1,9 +1,12 @@
+==========================================================================================================================================
+ // This is a program for determining the frequency of characters in a string   
+==========================================================================================================================================
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    string str = "C++ Programming is awesome";
+    string str = "C++ Programming is kinda' cool";
     char checkCharacter = 'a';
     int count = 0;
 
