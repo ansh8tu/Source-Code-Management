@@ -1,5 +1,6 @@
-// Computes time difference of two time period
-// Time periods are entered by the user
+========================================================================================================================================
+//This is a program that computes time difference of two time period
+========================================================================================================================================
 
 #include <iostream>
 using namespace std;
